@@ -1,0 +1,124 @@
+$radius: 2px;
+$padding: 12px 12px;
+$outline:0;
+$margin:8px 10px 8px 10px;
+$vw: 50vw;
+$headerscolor:grey;
+
+
+label {
+        font-size: 20px;
+        color: orangered;
+        padding: $padding;
+    }
+
+hr{
+        
+        border-bottom: 0.2px solid #ebebeb;
+    
+}
+
+form {
+    display: table;
+    table-layout: fixed;
+    margin-top:50px;
+    position:relative;
+    
+    div.header{
+        display:table-cell;
+        font-size:125%;
+        color:$headerscolor;
+        margin:$margin;
+        padding:$padding;
+        vertical-align: middle;
+        outline:$outline;
+    }
+    div.space{
+        display:table-cell;
+        width:$vw;
+        outline:$outline;
+        margin:$margin;
+    }
+    
+    div.header2{
+        display:table-cell;
+        font-size:90%;
+        font-weight:bold;
+        color:$headerscolor;
+        margin:$margin;
+        padding:$padding;
+        vertical-align: middle;
+        outline:$outline;
+    }
+    
+    div{
+      min-width: 200px;
+      display: table-row;
+      
+    }
+    
+  
+    label {
+        white-space: nowrap;
+        display: table-cell;
+        margin-left:10px;
+        width:50vw;
+        outline: $outline;
+        font-size: 13px;
+        color: black;
+        padding:$padding;
+        vertical-align: middle;
+    }
+    
+    input[type=text]:focus{
+        outline:none;
+        box-shadow:0 0 0 2px lightblue;
+    }
+    input[type=text]{
+        display: table-cell;
+        outline: $outline;
+        width:$vw;
+        border-radius: $radius;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: thin;
+        font-size: 12px;
+        height: 30px;
+        margin:$margin;
+        
+    }
+    
+    input[type=submit]{ 
+        display:table-cell;
+        padding: $padding;
+        margin:$margin;
+        font-size: 12px;
+        border:0;
+        background-color:dodgerblue;
+        color:white;
+    }
+    
+    
+}
+
+.container{
+    display:table-cell;
+    justify-content:flex-end;
+    outline: $outline;
+    margin:0;
+    text-align:right; 
+    width:$vw;
+}
+
+
+.rlabel{
+    white-space: nowrap;
+    font-size: 12px;
+    vertical-align:center;
+}
+
+@media all and (max-width: 900px) {
+    .dnone{ visibility: hidden; }
+}
+
+

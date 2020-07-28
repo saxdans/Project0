@@ -1,0 +1,104 @@
+label {
+  font-size: 20px;
+  color: orangered;
+  padding: 12px 12px;
+}
+
+hr {
+  border-bottom: 0.2px solid #ebebeb;
+}
+
+form {
+  display: table;
+  table-layout: fixed;
+  margin-top: 50px;
+  position: relative;
+}
+form div.header {
+  display: table-cell;
+  font-size: 125%;
+  color: grey;
+  margin: 8px 10px 8px 10px;
+  padding: 12px 12px;
+  vertical-align: middle;
+  outline: 0;
+}
+form div.space {
+  display: table-cell;
+  width: 50vw;
+  outline: 0;
+  margin: 8px 10px 8px 10px;
+}
+form div.header2 {
+  display: table-cell;
+  font-size: 90%;
+  font-weight: bold;
+  color: grey;
+  margin: 8px 10px 8px 10px;
+  padding: 12px 12px;
+  vertical-align: middle;
+  outline: 0;
+}
+form div {
+  min-width: 200px;
+  display: table-row;
+}
+form label {
+  white-space: nowrap;
+  display: table-cell;
+  margin-left: 10px;
+  width: 50vw;
+  outline: 0;
+  font-size: 13px;
+  color: black;
+  padding: 12px 12px;
+  vertical-align: middle;
+}
+form input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px lightblue;
+}
+form input[type=text] {
+  display: table-cell;
+  outline: 0;
+  width: 50vw;
+  border-radius: 2px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: thin;
+  font-size: 12px;
+  height: 30px;
+  margin: 8px 10px 8px 10px;
+}
+form input[type=submit] {
+  display: table-cell;
+  padding: 12px 12px;
+  margin: 8px 10px 8px 10px;
+  font-size: 12px;
+  border: 0;
+  background-color: dodgerblue;
+  color: white;
+}
+
+.container {
+  display: table-cell;
+  justify-content: flex-end;
+  outline: 0;
+  margin: 0;
+  text-align: right;
+  width: 50vw;
+}
+
+.rlabel {
+  white-space: nowrap;
+  font-size: 12px;
+  vertical-align: center;
+}
+
+@media all and (max-width: 900px) {
+  .dnone {
+    visibility: hidden;
+  }
+}
+
+/*# sourceMappingURL=advform.css.map */

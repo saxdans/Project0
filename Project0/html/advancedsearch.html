@@ -1,0 +1,90 @@
+<! DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/advform.css">
+        <link rel="stylesheet"  href="../css/style.css">
+    </head>
+    <body>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Search</a></li>
+                <li><a href="imagesearch.html">Image search</a></li>
+            </ul>
+            
+        </nav>
+        <label>Google advanced search</label>
+        <hr>
+        
+        <script type="text/javascript">
+            function addquotes(){
+        var input=document.getElementById("quote").value;
+        input.value="'"+input+"'";
+            }
+            function addminus(){
+                var input=document.getElementById("minus").value;
+                input.value="-"+input;
+            }
+        </script>
+        
+        <form action="https://google.com/search">
+            
+            <div class="header">
+                <span>Find pages with...</span>
+            </div>
+            <div class="space">
+                
+            </div>
+            
+            <div class="header2">
+                <span>To do in the search box...</span>
+            </div>
+            
+            <div>
+            <label>All these words:</label>
+            <input type="text" value name="as_q">
+                <label class="rlabel dnone">
+                    Type the important words: tri-colour rat terrier
+                </label>
+            </div>
+            
+            <div>
+            <label>This exact word or phrase:</label>
+            <input type="text" value name="as_epq" onsubmit="addquotes()" id="quote">
+                <label class="rlabel dnone">
+                    Put exact words in quotes: "rat terrier"
+                </label>
+            </div>
+            
+            <div>
+            <label>Any of these words:</label>
+            <input type="text" value name="as_oq">
+                <label class="rlabel dnone">
+                    Type OR between all the words you want: miniature OR standard
+                </label>
+            </div>
+            
+            <div>
+            <label>None of these words:</label>
+            <input type="text" value name="as_eq" id="minus" onsubmit="addminus()">
+                <label class="rlabel dnone">
+                    Puts a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+                </label>
+            </div>
+            
+            
+            
+            <div>
+                <label></label>
+                <div class="container">
+                <input type="submit" value="Advanced Search">
+                </div>
+                
+            </div>   
+        </form>
+        
+    </body>
+</html>
